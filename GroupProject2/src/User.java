@@ -5,6 +5,7 @@ abstract class User {
 	
 	abstract void accessCourseList();
 	//really need getUsername?
+	//Nah....not really
 	abstract String getUsername(String Username);
 	abstract String setPassword(String Password);
 	
