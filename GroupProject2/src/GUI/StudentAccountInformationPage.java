@@ -3,9 +3,6 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import java.awt.GridBagLayout;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.RowSpec;
 import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
@@ -13,7 +10,6 @@ import java.awt.Font;
 import javax.swing.JButton;
 
 public class StudentAccountInformationPage {
-	private String HW = "Hello World!!!!!";
 
 	private JFrame frmStudentAccount;
 
@@ -83,7 +79,7 @@ public class StudentAccountInformationPage {
 		label_5.setBounds(186, 162, 214, 30);
 		frmStudentAccount.getContentPane().add(label_5);
 		
-		JLabel label_6 = new JLabel(HW);
+		JLabel label_6 = new JLabel("First Name goes here");
 		label_6.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		label_6.setBounds(186, 131, 214, 30);
 		frmStudentAccount.getContentPane().add(label_6);
@@ -97,5 +93,15 @@ public class StudentAccountInformationPage {
 		label_9.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		label_9.setBounds(186, 21, 214, 30);
 		frmStudentAccount.getContentPane().add(label_9);
+		
+		JLabel label_2 = new JLabel("Paid:");
+		label_2.setFont(new Font("Tahoma", Font.BOLD, 11));
+		label_2.setBounds(363, 0, 46, 14);
+		frmStudentAccount.getContentPane().add(label_2);
+		
+		JLabel label_3 = new JLabel("Yes / No");
+		label_3.setHorizontalAlignment(SwingConstants.CENTER);
+		label_3.setBounds(392, 0, 46, 14);
+		frmStudentAccount.getContentPane().add(label_3);
 	}
 }
